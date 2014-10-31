@@ -1,7 +1,9 @@
 Spree Resale
 =========
 
-Spree extension for Resale users. Adds fields resale_price and resale_min_quantity. Tested on Spree 2.4.
+Spree extension for Resale users. Tested on Spree 2.4.
+
+Adds new user role for resales, fields for resale price and resale minimum quantity with respective validations.
 
 Installation
 ------------
