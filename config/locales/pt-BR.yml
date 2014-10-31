@@ -1,0 +1,8 @@
+pt-BR:
+  activerecord:
+    attributes:
+      spree/product:
+        resale_price: Preço para revenda
+        resale_min_quantity: Quantidade mínima revenda
+  spree:
+    please_enter_quantity_above_than_minimum: "Quantidade para revenda deve ser maior que %{minimum} unidades"

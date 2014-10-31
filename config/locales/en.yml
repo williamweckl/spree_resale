@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    attributes:
+      spree/product:
+        resale_price: Resale price
+        resale_min_quantity: Minimum amount for resale
+  spree:
+    please_enter_quantity_above_than_minimum: "Amount for resale needs to be higher than %{minimum}."
