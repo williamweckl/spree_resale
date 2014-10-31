@@ -5,16 +5,6 @@ module Spree
     validate :validate_resale_price_maximum
     validate :validate_resale_min_quantity
 
-=begin
-    def display_resale_price
-      money(resale_price)
-    end
-
-    def money(money_price = amount)
-      Spree::Money.new(money_price || 0, { currency: currency })
-    end
-=end
-
     def money
       money_price = (!resale_price.blank? && Spree::User.current_user && Spree::User.current_user.resale?) ? resale_price : amount
       Spree::Money.new(money_price || 0, { currency: currency })
@@ -28,11 +18,6 @@ module Spree
       self[:resale_min_quantity] = resale_min_quantity
     end
 
-=begin
-    def amount
-      (Spree::User.current_user && Spree::User.current_user.resale?) ? resale_price : amount
-    end
-=end
     private
 
     def validate_resale_price_maximum
