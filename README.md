@@ -6,10 +6,13 @@ Spree extension for Resale users. Adds fields resale_price and resale_min_quanti
 Installation
 ------------
 
-Add spree_resale to your Gemfile:
+Add spree, spree_auth and spree_resale to your Gemfile:
 
 ```ruby
-gem 'spree_resale', github: 'github: 'spree/spree_resale', branch: 'master'
+gem 'spree', :git => 'https://github.com/spree/spree.git', :branch => '2-4-stable'
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-4-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-4-stable'
+gem 'spree_resale', github: 'williamweckl/spree_resale', branch: 'master'
 ```
 
 Bundle your dependencies and run the installation generator:
