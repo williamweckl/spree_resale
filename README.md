@@ -15,11 +15,17 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_resale', github: 'williamweckl/spree_resale', branch: 'master'
 ```
 
-Bundle your dependencies and run the installation generator:
+Bundle your dependencies and run the spree and spree_resale installation generator:
 
 ```shell
 bundle
+bundle exec rails g spree:install
 bundle exec rails g spree_resale:install
 ```
+
+Usage
+------------
+
+There is a new user role called `resale`. Edit a user and set it to resale to resale prices and minimum amount be applied.
 
 Copyright (c) 2014 spree_resale, released under the New BSD License
